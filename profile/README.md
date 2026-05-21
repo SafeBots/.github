@@ -1,6 +1,6 @@
 # Safebots Platform
 
-**Safebots** is a sovereign AI infrastructure stack — sealed computation, governed autonomy, community-owned intelligence. Five interlocking plugins built on the Qbix Streams substrate, each handling a distinct layer of the architecture, none of them reinventing what the layer below already provides.
+[**Safebots**](https://safebots.ai) is a sovereign AI infrastructure stack — sealed computation, governed autonomy, community-owned intelligence. Five interlocking plugins built on the Qbix Streams substrate, each handling a distinct layer of the architecture, none of them reinventing what the layer below already provides.
 
 -----
 
