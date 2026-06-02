@@ -1,10 +1,16 @@
 # Safebots
 
-Sovereign AI infrastructure — sealed computation, governed autonomy, community-owned intelligence. Five interlocking plugins on the Qbix Streams substrate. Open source. Production-deployed since 2011 at the substrate layer; Safebox, Grokers, and Safebots in active development.
+Open-source AI infrastructure with a different bet at the foundation: actions are proposed, not executed. Every side effect — sending an email, charging a card, deleting a row, calling a paid API — goes through M-of-N approval before it leaves the box. Meant to be run by both people and organizations, including regulated institutions, Safebots continuously compound and refine information in a [graph database](https://community.qbix.com/t/qbix-streams-as-a-graph-database/769) powered by [Qbix Platform](https://github.com/Qbix), which has attracted 7M users across 100+ countries since 2011: There are five main repositories:
+
+* Infrastructure - an auditable, locked-down Linux environment
+* Safebox - standardized substrate for AI orchestration
+* Safebots - AI-powered collaboration for teams and organizations
+* Grokers - intelligently ingests existing code bases
+* Code - safely generates code and runs experiments
 
 ## Contents
 
-- [Predictable enough to build on](#predictable-enough-to-build-on)
+- [Why Safebox and Safebots](#predictable-enough-to-build-on)
 - [What this is](#what-this-is)
 - [Components](#components)
 - [Field convergence](#field-convergence)
