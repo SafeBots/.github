@@ -1,27 +1,27 @@
 # Safebots
 
-Open-source AI infrastructure with a different bet at the foundation: actions are proposed, not executed. Every side effect — sending an email, charging a card, deleting a row, calling a paid API — goes through M-of-N approval before it leaves the box. Meant to be run by both people and organizations, including regulated institutions, Safebots continuously compound and refine information in a [graph database](https://community.qbix.com/t/qbix-streams-as-a-graph-database/769) powered by [Qbix Platform](https://github.com/Qbix), which has attracted 7M users across 100+ countries since 2011: There are five main repositories:
+Open-source AI infrastructure with a different bet at the foundation: actions are proposed, not executed. Every side effect — sending an email, charging a card, deleting a row, calling a paid API — goes through M-of-N approval before it leaves the box. Meant to be run by both people and organizations, including regulated institutions, Safebots continuously compound and refine information in a [graph database](https://community.qbix.com/t/qbix-streams-as-a-graph-database/769) powered by [Qbix Platform](https://github.com/Qbix), which has attracted 7M users across 100+ countries since 2011. There are five main repositories:
 
-* Infrastructure - an auditable, locked-down Linux environment
-* Safebox - standardized substrate for AI orchestration
-* Safebots - AI-powered collaboration for teams and organizations
-* Grokers - intelligently ingests existing code bases
-* Code - safely generates code and runs experiments
+* **Infrastructure** — an auditable, locked-down Linux environment
+* **Safebox** — standardized substrate for AI orchestration
+* **Safebots** — AI-powered collaboration for teams and organizations
+* **Grokers** — intelligently ingests existing code bases
+* **Code** — safely generates code and runs experiments
 
 ## Contents
 
-- [Why Safebox and Safebots](#predictable-enough-to-build-on)
-- [What this is](#what-this-is)
-- [Components](#components)
-- [Field convergence](#field-convergence)
-- [Substrate primitives](#substrate-primitives)
-- [OpenClaiming Protocol](#openclaiming-protocol)
-- [Architecture](#architecture)
-- [Papers](#papers)
-- [Long-form essays](#long-form-essays)
-- [Status](#status)
-- [Contact](#contact)
-- [Join the movement](#join-the-movement)
+- [🧱 Predictable enough to build on](#-predictable-enough-to-build-on)
+- [🎯 What this is](#-what-this-is)
+- [🧩 Components](#-components)
+- [🔭 Field convergence](#-field-convergence)
+- [🪨 Substrate primitives](#-substrate-primitives)
+- [🔏 OpenClaiming Protocol](#-openclaiming-protocol)
+- [🧭 Architecture](#-architecture)
+- [📚 Papers](#-papers)
+- [📝 Long-form essays](#-long-form-essays)
+- [🚦 Status](#-status)
+- [👋 Contact](#-contact)
+- [🤝 Join the movement](#-join-the-movement)
 
 ---
 
@@ -37,9 +37,9 @@ Open-source AI infrastructure with a different bet at the foundation: actions ar
 
 ---
 
-## Predictable enough to build on
+## 🧱 Predictable enough to build on
 
-Every infrastructure layer that eventually disappeared into the background got there the same way: it became *boring and predictable*. Predictable enough that the layer above could stop worrying about it and start building. Four cases, each showing what changed once the threshold was crossed.
+Every infrastructure layer that eventually disappeared into the background got there the same way: it became *uneventful*. Predictable enough that the layer above could stop worrying about it and start building. Four cases, each showing what changed once the threshold was crossed.
 
 | Layer | The question it removed | What got built on top |
 |---|---|---|
@@ -70,7 +70,7 @@ The layer above can then stop asking *"did this action actually happen the way t
 
 ---
 
-## What this is
+## 🎯 What this is
 
 Five components — Safebox, Safebots, Grokers, Code, Infrastructure — composed against one substrate (Qbix Streams). Each handles a distinct concern, none reinvents what the layer below provides.
 
@@ -86,7 +86,7 @@ The architectural property that ties these together: **the model that proposes a
 
 ---
 
-## Components
+## 🧩 Components
 
 <img src="https://safebots.ai/img/safebots/safebot1.webp" alt="A safebot" align="right" width="180">
 
@@ -128,7 +128,7 @@ Reachable only from the qbix process via Unix domain socket, never from the netw
 
 ---
 
-## Field convergence
+## 🔭 Field convergence
 
 The architectural pattern these five components implement has independent confirmation in 2026 publications from IBM Research, Oracle, Microsoft, and Stanford CRFM. They arrived at structurally equivalent conclusions from different starting points.
 
@@ -147,7 +147,7 @@ What this repo adds beyond any of the above: hardware-attested execution (TPM-at
 
 ---
 
-## Substrate primitives
+## 🪨 Substrate primitives
 
 Underneath every component is **Qbix Streams** — a directed property graph stored as ordinary MySQL tables. Each node is a typed stream with attributes, a participant list with read/write/admin levels, and an append-only message timeline. Each edge is a row in `streams_related_to` and `streams_related_from`, indexed in both directions.
 
@@ -161,7 +161,7 @@ Production deployment since 2011. Powers the [Groups](https://groups.app) app (~
 
 ---
 
-## OpenClaiming Protocol
+## 🔏 OpenClaiming Protocol
 
 Every signed assertion in the stack — every approval, every authorization, every cross-system attestation — is an OpenClaim. The protocol is a single canonical envelope for signed claims, with RFC 8785 JCS canonicalization inlined for deterministic serialization and EIP-712 typed-data signatures so the same claim verifies under any EVM wallet, any browser, and any backend with no glue code.
 
@@ -185,7 +185,7 @@ Specification and reference implementations (PHP, JavaScript, Solidity) at [gith
 
 ---
 
-## Architecture
+## 🧭 Architecture
 
 ```
   Communities & Users
@@ -219,7 +219,7 @@ Grokers and Code sit alongside Safebox rather than below Infrastructure because 
 
 ---
 
-## Papers
+## 📚 Papers
 
 Six arXiv preprints across two research programs — AI inference and applications, and distributed systems. The implementations referenced from this repo correspond to the architectural claims in these papers.
 
@@ -244,7 +244,7 @@ A patent portfolio of seven provisional filings covers the corresponding impleme
 
 ---
 
-## Long-form essays
+## 📝 Long-form essays
 
 Architectural reference material on the substrate, the governance model, and what they make possible. Each links to a deeper write-up on safebots.ai.
 
@@ -279,7 +279,7 @@ Architectural reference material on the substrate, the governance model, and wha
 
 ---
 
-## Status
+## 🚦 Status
 
 Active development across all components.
 
@@ -291,7 +291,7 @@ Active development across all components.
 
 ---
 
-## Contact
+## 👋 Contact
 
 [**Greg Magarshak**](https://linkedin.com/in/magarshak) · Qbix · Intercoin · Safebots Inc
 
@@ -303,7 +303,7 @@ Explore the source:
 
 ---
 
-## Join the movement
+## 🤝 Join the movement
 
 Every Saturday we run a live AMA. Bring a problem you want to solve, a workflow you want to build, a question about the architecture, or just curiosity about what's actually possible. First-time users get set up in the first ten minutes; builders pair-build new workflows live; organizations sketch real solutions to real problems on the call. No pitch deck. No fee. The library grows every week and so does the network.
 
