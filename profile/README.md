@@ -305,7 +305,7 @@ Explore the source:
 
 ## 🤝 Join the movement
 
-Every Saturday we run a live AMA. Bring a problem you want to solve, a workflow you want to build, a question about the architecture, or just curiosity about what's actually possible. First-time users get set up in the first ten minutes; builders pair-build new workflows live; organizations sketch real solutions to real problems on the call. No pitch deck. No fee. The library grows every week and so does the network.
+Every Sunday at 5PM ET we run a live AMA. Bring a problem you want to solve, a workflow you want to build, a question about the architecture, or just curiosity about what's actually possible. First-time users get set up in the first ten minutes; builders pair-build new workflows live; organizations sketch real solutions to real problems on the call. No pitch deck. No fee. The library grows every week and so does the network.
 
 [![Save your spot at the weekly AMA](https://img.shields.io/badge/%E2%86%92%20Save%20your%20spot%20at%20the%20weekly%20AMA-4CAF50?style=for-the-badge&logoColor=white)](https://calendly.com/safebotsai/weekly)
 
